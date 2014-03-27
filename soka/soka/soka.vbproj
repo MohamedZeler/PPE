@@ -71,6 +71,19 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCatalogue.Designer.vb">
+      <DependentUpon>FrmCatalogue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCatalogue.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmMenuSOKA.Designer.vb">
       <DependentUpon>FrmMenuSOKA.vb</DependentUpon>
     </Compile>
@@ -112,6 +125,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FrmCatalogue.resx">
+      <DependentUpon>FrmCatalogue.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMenuSOKA.resx">
       <DependentUpon>FrmMenuSOKA.vb</DependentUpon>
     </EmbeddedResource>
@@ -142,6 +158,9 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chaussure soka.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
