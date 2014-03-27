@@ -60,10 +60,10 @@ Partial Class frm_AccueilClient
         'LineShape1
         '
         Me.LineShape1.Name = "LineShape1"
-        Me.LineShape1.X1 = 254
-        Me.LineShape1.X2 = 254
-        Me.LineShape1.Y1 = 96
-        Me.LineShape1.Y2 = 272
+        Me.LineShape1.X1 = 257
+        Me.LineShape1.X2 = 257
+        Me.LineShape1.Y1 = 65
+        Me.LineShape1.Y2 = 303
         '
         'btn_consulterliste
         '

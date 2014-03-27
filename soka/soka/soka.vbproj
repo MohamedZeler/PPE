@@ -46,6 +46,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -83,6 +84,18 @@
     <Compile Include="FrmMenuSOKA.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frm_AccueilClient.Designer.vb">
+      <DependentUpon>frm_AccueilClient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_AccueilClient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_NouveauProspect.Designer.vb">
+      <DependentUpon>frm_NouveauProspect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_NouveauProspect.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -102,6 +115,12 @@
   <ItemGroup>
     <EmbeddedResource Include="FrmMenuSOKA.resx">
       <DependentUpon>FrmMenuSOKA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_AccueilClient.resx">
+      <DependentUpon>frm_AccueilClient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_NouveauProspect.resx">
+      <DependentUpon>frm_NouveauProspect.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
