@@ -38,6 +38,7 @@ Partial Class frm_AjouterEntreprise
         Me.txt_mailentreprise = New System.Windows.Forms.TextBox()
         Me.cbo_paysentreprise = New System.Windows.Forms.ComboBox()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.btn_addentreprise = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -179,11 +180,21 @@ Partial Class frm_AjouterEntreprise
         Me.Label8.TabIndex = 15
         Me.Label8.Text = "Pays :"
         '
+        'btn_addentreprise
+        '
+        Me.btn_addentreprise.Location = New System.Drawing.Point(128, 325)
+        Me.btn_addentreprise.Name = "btn_addentreprise"
+        Me.btn_addentreprise.Size = New System.Drawing.Size(75, 23)
+        Me.btn_addentreprise.TabIndex = 16
+        Me.btn_addentreprise.Text = "Ajouter"
+        Me.btn_addentreprise.UseVisualStyleBackColor = True
+        '
         'frm_AjouterEntreprise
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(325, 343)
+        Me.ClientSize = New System.Drawing.Size(325, 360)
+        Me.Controls.Add(Me.btn_addentreprise)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.cbo_paysentreprise)
         Me.Controls.Add(Me.txt_mailentreprise)
@@ -218,4 +229,5 @@ Partial Class frm_AjouterEntreprise
     Friend WithEvents txt_mailentreprise As System.Windows.Forms.TextBox
     Friend WithEvents cbo_paysentreprise As System.Windows.Forms.ComboBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents btn_addentreprise As System.Windows.Forms.Button
 End Class

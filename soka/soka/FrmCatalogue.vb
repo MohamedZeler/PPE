@@ -24,7 +24,7 @@ Public Class FrmCatalogue
 
         cmd = New SqlCommand()
         cmd.Connection = cnn
-        cmd.CommandText = "SELECT  FROM  "
+        cmd.CommandText = ""
 
         JeuEnr = cmd.ExecuteReader()
 
