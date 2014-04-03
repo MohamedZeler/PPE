@@ -131,6 +131,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmAjoutProduit.resx">
+      <DependentUpon>frmAjoutProduit.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCatalogue.resx">
       <DependentUpon>FrmCatalogue.vb</DependentUpon>
     </EmbeddedResource>
