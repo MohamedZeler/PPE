@@ -22,6 +22,7 @@ Partial Class frm_AccueilClient
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_AccueilClient))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
@@ -155,6 +156,7 @@ Partial Class frm_AccueilClient
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(505, 319)
         Me.Controls.Add(Me.btn_relance)
         Me.Controls.Add(Me.btn_newaction)

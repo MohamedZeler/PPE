@@ -22,6 +22,7 @@ Partial Class frm_NouveauProspect
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_NouveauProspect))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.rbtn_madame = New System.Windows.Forms.RadioButton()
         Me.rbtn_monsieur = New System.Windows.Forms.RadioButton()
@@ -207,6 +208,7 @@ Partial Class frm_NouveauProspect
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(284, 383)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btn_addentreprise)

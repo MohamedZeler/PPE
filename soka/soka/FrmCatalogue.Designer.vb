@@ -22,6 +22,7 @@ Partial Class FrmCatalogue
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmCatalogue))
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.Line1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
@@ -176,6 +177,7 @@ Partial Class FrmCatalogue
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(667, 466)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.img2)
