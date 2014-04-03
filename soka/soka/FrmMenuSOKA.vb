@@ -6,4 +6,8 @@
         frm_AccueilClient.Show()
 
     End Sub
+
+    Private Sub btnCatalogue_Click(sender As Object, e As EventArgs) Handles btnCatalogue.Click
+        FrmCatalogue.Show()
+    End Sub
 End Class
