@@ -11,7 +11,7 @@ Public Class FrmCatalogue
 
     End Sub
 
-    Private Sub img1_Click(sender As Object, e As EventArgs) Handles img1.Click
+    Private Sub img1_Click(sender As Object, e As EventArgs) Handles img.Click
 
         Dim cnn As SqlConnection
         cnn = New SqlConnection("Data Source=172.30.0.115;Initial Catalog=SOKA_GestionCo;User ID=SIO1;Password=SIO1MDP")
@@ -24,7 +24,7 @@ Public Class FrmCatalogue
 
         cmd = New SqlCommand()
         cmd.Connection = cnn
-        cmd.CommandText = "SELECT  FROM  "
+        cmd.CommandText = "SELECT image FROM Produit "
 
         JeuEnr = cmd.ExecuteReader()
 
@@ -33,5 +33,9 @@ Public Class FrmCatalogue
         End While
 
         JeuEnr.Close()
+    End Sub
+
+    Private Sub img2_Click(sender As Object, e As EventArgs) Handles img2.Click
+
     End Sub
 End Class
