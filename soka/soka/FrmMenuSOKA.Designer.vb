@@ -22,6 +22,7 @@ Partial Class FrmMenuSOKA
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmMenuSOKA))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnParametre = New System.Windows.Forms.Button()
         Me.btnMails = New System.Windows.Forms.Button()
@@ -78,6 +79,7 @@ Partial Class FrmMenuSOKA
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(284, 261)
         Me.Controls.Add(Me.btnGestionCli)
         Me.Controls.Add(Me.btnCatalogue)
@@ -86,6 +88,7 @@ Partial Class FrmMenuSOKA
         Me.Controls.Add(Me.Label1)
         Me.Name = "FrmMenuSOKA"
         Me.Text = "FrmMenuSOKA"
+        Me.TransparencyKey = System.Drawing.Color.Transparent
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

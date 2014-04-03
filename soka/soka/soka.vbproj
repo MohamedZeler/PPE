@@ -142,6 +142,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCatalogue.resx">
       <DependentUpon>FrmCatalogue.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmListeContacts.resx">
       <DependentUpon>FrmListeContacts.vb</DependentUpon>
@@ -185,6 +186,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ttipi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fond .jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -155,6 +155,7 @@ Partial Class frm_AccueilClient
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.soka.My.Resources.Resources.Fond_
         Me.ClientSize = New System.Drawing.Size(505, 319)
         Me.Controls.Add(Me.btn_relance)
         Me.Controls.Add(Me.btn_newaction)
