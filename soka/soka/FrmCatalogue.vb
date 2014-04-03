@@ -10,10 +10,11 @@ Public Class FrmCatalogue
     Private Sub FrmCatalogue_Load(sender As Object, e As EventArgs) Handles MyBase.Load
     End Sub
 
-<<<<<<< HEAD
+
     Private Sub img2_Click(sender As Object, e As EventArgs) Handles img2.Click
         picbo1.Image = Image.FromFile(" C:\Users\raoul\Documents\PPE\Images\ttipi.jpg")
-=======
+    End Sub
+
     Private Sub img1_Click(sender As Object, e As EventArgs) Handles img.Click
 
         Dim cnn As SqlConnection
@@ -36,29 +37,28 @@ Public Class FrmCatalogue
         JeuEnr = cmd.ExecuteReader()
 
         While JeuEnr.Read()
->>>>>>> f3bdac2e7e88edaca0faadee7928433570f6ce19
+
 
 
     End Sub
 
-<<<<<<< HEAD
 
-=======
+
+
 
     Private Sub img2_Click(sender As Object, e As EventArgs) Handles img2.Click
 
     End Sub
->>>>>>> f3bdac2e7e88edaca0faadee7928433570f6ce19
+
     Private Sub btnAjout_Click(sender As Object, e As EventArgs) Handles btnAjout.Click
 
         frmAjoutProduit.Show()
 
-<<<<<<< HEAD
+
     End Sub
 
     Private Sub img1_Click(sender As Object, e As EventArgs) Handles img1.Click
         picbo1.Image = Image.FromFile(" C:\Users\raoul\Documents\PPE\Images\s-de-soka.jpg")
-=======
->>>>>>> f3bdac2e7e88edaca0faadee7928433570f6ce19
+
     End Sub
 End Class
