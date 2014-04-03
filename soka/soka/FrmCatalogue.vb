@@ -35,7 +35,13 @@ Public Class FrmCatalogue
         JeuEnr.Close()
     End Sub
 
+<<<<<<< HEAD
     Private Sub img2_Click(sender As Object, e As EventArgs) Handles img2.Click
 
+=======
+    Private Sub btnAjout_Click(sender As Object, e As EventArgs) Handles btnAjout.Click
+
+        frmAjoutProduit.Show()
+>>>>>>> f037bd709b40bc650a32986e3739c0a62f209c61
     End Sub
 End Class
