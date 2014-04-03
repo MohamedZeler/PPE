@@ -22,7 +22,6 @@ Partial Class frm_AjouterEntreprise
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_AjouterEntreprise))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txt_designation = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -194,7 +193,7 @@ Partial Class frm_AjouterEntreprise
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImage = Global.soka.My.Resources.Resources.Fond_
         Me.ClientSize = New System.Drawing.Size(325, 360)
         Me.Controls.Add(Me.btn_addentreprise)
         Me.Controls.Add(Me.Label8)

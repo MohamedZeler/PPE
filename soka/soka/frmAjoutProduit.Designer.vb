@@ -22,7 +22,6 @@ Partial Class frmAjoutProduit
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmAjoutProduit))
         Me.txtNomModele = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -166,7 +165,7 @@ Partial Class frmAjoutProduit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImage = Global.soka.My.Resources.Resources.Fond_
         Me.ClientSize = New System.Drawing.Size(529, 496)
         Me.Controls.Add(Me.cboCollection)
         Me.Controls.Add(Me.Label5)
