@@ -31,12 +31,12 @@ Partial Class FrmCatalogue
         Me.txtDescript = New System.Windows.Forms.RichTextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.img2 = New System.Windows.Forms.Button()
-        Me.img1 = New System.Windows.Forms.Button()
+        Me.img = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.img2 = New System.Windows.Forms.Button()
+        Me.img1 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -119,22 +119,14 @@ Partial Class FrmCatalogue
         Me.Button1.Text = "\d(-_-)b/"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'img2
+        'img
         '
-        Me.img2.Location = New System.Drawing.Point(139, 12)
-        Me.img2.Name = "img2"
-        Me.img2.Size = New System.Drawing.Size(80, 80)
-        Me.img2.TabIndex = 7
-        Me.img2.UseVisualStyleBackColor = True
-        '
-        'img1
-        '
-        Me.img1.Location = New System.Drawing.Point(24, 12)
-        Me.img1.Name = "img1"
-        Me.img1.Size = New System.Drawing.Size(80, 80)
-        Me.img1.TabIndex = 8
-        Me.img1.Text = "(_- | )"
-        Me.img1.UseVisualStyleBackColor = True
+        Me.img.Location = New System.Drawing.Point(24, 12)
+        Me.img.Name = "img"
+        Me.img.Size = New System.Drawing.Size(80, 80)
+        Me.img.TabIndex = 8
+        Me.img.Text = "(_- | )"
+        Me.img.UseVisualStyleBackColor = True
         '
         'Button4
         '
@@ -154,14 +146,6 @@ Partial Class FrmCatalogue
         Me.Button5.Text = "( | -_)"
         Me.Button5.UseVisualStyleBackColor = True
         '
-        'Button6
-        '
-        Me.Button6.Location = New System.Drawing.Point(139, 132)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(80, 80)
-        Me.Button6.TabIndex = 11
-        Me.Button6.UseVisualStyleBackColor = True
-        '
         'PictureBox1
         '
         Me.PictureBox1.Location = New System.Drawing.Point(446, 12)
@@ -170,17 +154,35 @@ Partial Class FrmCatalogue
         Me.PictureBox1.TabIndex = 12
         Me.PictureBox1.TabStop = False
         '
+        'img2
+        '
+        Me.img2.Image = Global.soka.My.Resources.Resources.ttipi
+        Me.img2.Location = New System.Drawing.Point(139, 132)
+        Me.img2.Name = "img2"
+        Me.img2.Size = New System.Drawing.Size(80, 80)
+        Me.img2.TabIndex = 11
+        Me.img2.UseVisualStyleBackColor = True
+        '
+        'img1
+        '
+        Me.img1.Image = Global.soka.My.Resources.Resources.s_de_soka
+        Me.img1.Location = New System.Drawing.Point(139, 12)
+        Me.img1.Name = "img1"
+        Me.img1.Size = New System.Drawing.Size(80, 80)
+        Me.img1.TabIndex = 7
+        Me.img1.UseVisualStyleBackColor = True
+        '
         'FrmCatalogue
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(667, 466)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.Button6)
+        Me.Controls.Add(Me.img2)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.img)
         Me.Controls.Add(Me.img1)
-        Me.Controls.Add(Me.img2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtDescript)
@@ -204,10 +206,10 @@ Partial Class FrmCatalogue
     Friend WithEvents txtDescript As System.Windows.Forms.RichTextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents img2 As System.Windows.Forms.Button
     Friend WithEvents img1 As System.Windows.Forms.Button
+    Friend WithEvents img As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents Button5 As System.Windows.Forms.Button
-    Friend WithEvents Button6 As System.Windows.Forms.Button
+    Friend WithEvents img2 As System.Windows.Forms.Button
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 End Class
