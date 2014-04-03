@@ -24,11 +24,11 @@ Public Class FrmCatalogue
 
         cmd = New SqlCommand()
         cmd.Connection = cnn
-<<<<<<< HEAD
+
         cmd.CommandText = ""
-=======
+
         cmd.CommandText = "SELECT image FROM Produit "
->>>>>>> 5ed8ed7683f564b0851fdb845bd4cd559a5ad14a
+
 
         JeuEnr = cmd.ExecuteReader()
 
@@ -39,13 +39,13 @@ Public Class FrmCatalogue
         JeuEnr.Close()
     End Sub
 
-<<<<<<< HEAD
+
     Private Sub img2_Click(sender As Object, e As EventArgs) Handles img2.Click
 
-=======
+    End Sub
     Private Sub btnAjout_Click(sender As Object, e As EventArgs) Handles btnAjout.Click
 
         frmAjoutProduit.Show()
->>>>>>> f037bd709b40bc650a32986e3739c0a62f209c61
+
     End Sub
 End Class
