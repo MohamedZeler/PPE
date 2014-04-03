@@ -78,6 +78,12 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmAjoutProduit.Designer.vb">
+      <DependentUpon>frmAjoutProduit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAjoutProduit.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmCatalogue.Designer.vb">
       <DependentUpon>FrmCatalogue.vb</DependentUpon>
     </Compile>
@@ -125,6 +131,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmAjoutProduit.resx">
+      <DependentUpon>frmAjoutProduit.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCatalogue.resx">
       <DependentUpon>FrmCatalogue.vb</DependentUpon>
     </EmbeddedResource>
