@@ -142,6 +142,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCatalogue.resx">
       <DependentUpon>FrmCatalogue.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmListeContacts.resx">
       <DependentUpon>FrmListeContacts.vb</DependentUpon>
