@@ -34,4 +34,9 @@ Public Class FrmCatalogue
 
         JeuEnr.Close()
     End Sub
+
+    Private Sub btnAjout_Click(sender As Object, e As EventArgs) Handles btnAjout.Click
+
+        frmAjoutProduit.Show()
+    End Sub
 End Class
