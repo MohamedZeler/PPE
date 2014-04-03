@@ -34,10 +34,10 @@ Partial Class FrmCatalogue
         Me.img = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.picbo1 = New System.Windows.Forms.PictureBox()
         Me.img2 = New System.Windows.Forms.Button()
         Me.img1 = New System.Windows.Forms.Button()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picbo1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ShapeContainer1
@@ -146,13 +146,14 @@ Partial Class FrmCatalogue
         Me.Button5.Text = "( | -_)"
         Me.Button5.UseVisualStyleBackColor = True
         '
-        'PictureBox1
+        'picbo1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(446, 12)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(209, 121)
-        Me.PictureBox1.TabIndex = 12
-        Me.PictureBox1.TabStop = False
+        Me.picbo1.Location = New System.Drawing.Point(446, 12)
+        Me.picbo1.Name = "picbo1"
+        Me.picbo1.Size = New System.Drawing.Size(209, 121)
+        Me.picbo1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picbo1.TabIndex = 12
+        Me.picbo1.TabStop = False
         '
         'img2
         '
@@ -177,7 +178,7 @@ Partial Class FrmCatalogue
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(667, 466)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.picbo1)
         Me.Controls.Add(Me.img2)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
@@ -192,7 +193,7 @@ Partial Class FrmCatalogue
         Me.Controls.Add(Me.ShapeContainer1)
         Me.Name = "FrmCatalogue"
         Me.Text = "FrmCatalogue"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picbo1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -211,5 +212,5 @@ Partial Class FrmCatalogue
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents img2 As System.Windows.Forms.Button
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents picbo1 As System.Windows.Forms.PictureBox
 End Class
