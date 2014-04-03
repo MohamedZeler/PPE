@@ -29,12 +29,19 @@ Partial Class frmAjoutProduit
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtMatiere = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txtDescription = New System.Windows.Forms.TextBox()
+        Me.txtCouture = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.txtInitiales = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.cboCollection = New System.Windows.Forms.ComboBox()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'txtNomModele
         '
-        Me.txtNomModele.Location = New System.Drawing.Point(104, 80)
+        Me.txtNomModele.Location = New System.Drawing.Point(112, 6)
         Me.txtNomModele.Name = "txtNomModele"
         Me.txtNomModele.Size = New System.Drawing.Size(128, 20)
         Me.txtNomModele.TabIndex = 0
@@ -42,7 +49,7 @@ Partial Class frmAjoutProduit
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(25, 83)
+        Me.Label1.Location = New System.Drawing.Point(33, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(73, 13)
         Me.Label1.TabIndex = 1
@@ -51,7 +58,7 @@ Partial Class frmAjoutProduit
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(41, 122)
+        Me.Label2.Location = New System.Drawing.Point(49, 82)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(57, 13)
         Me.Label2.TabIndex = 1
@@ -59,7 +66,7 @@ Partial Class frmAjoutProduit
         '
         'txtPrixBase
         '
-        Me.txtPrixBase.Location = New System.Drawing.Point(104, 119)
+        Me.txtPrixBase.Location = New System.Drawing.Point(112, 79)
         Me.txtPrixBase.Name = "txtPrixBase"
         Me.txtPrixBase.Size = New System.Drawing.Size(39, 20)
         Me.txtPrixBase.TabIndex = 0
@@ -67,7 +74,7 @@ Partial Class frmAjoutProduit
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(149, 122)
+        Me.Label3.Location = New System.Drawing.Point(157, 82)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(13, 13)
         Me.Label3.TabIndex = 1
@@ -75,7 +82,7 @@ Partial Class frmAjoutProduit
         '
         'txtMatiere
         '
-        Me.txtMatiere.Location = New System.Drawing.Point(104, 155)
+        Me.txtMatiere.Location = New System.Drawing.Point(112, 115)
         Me.txtMatiere.Name = "txtMatiere"
         Me.txtMatiere.Size = New System.Drawing.Size(128, 20)
         Me.txtMatiere.TabIndex = 0
@@ -83,32 +90,96 @@ Partial Class frmAjoutProduit
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(50, 162)
+        Me.Label4.Location = New System.Drawing.Point(58, 122)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(48, 13)
         Me.Label4.TabIndex = 1
         Me.Label4.Text = "Matiere :"
         '
-        'ListBox1
+        'Label5
         '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(104, 202)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(120, 95)
-        Me.ListBox1.TabIndex = 2
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(40, 46)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(66, 13)
+        Me.Label5.TabIndex = 2
+        Me.Label5.Text = "Description :"
+        '
+        'txtDescription
+        '
+        Me.txtDescription.Location = New System.Drawing.Point(112, 43)
+        Me.txtDescription.Name = "txtDescription"
+        Me.txtDescription.Size = New System.Drawing.Size(128, 20)
+        Me.txtDescription.TabIndex = 0
+        '
+        'txtCouture
+        '
+        Me.txtCouture.Location = New System.Drawing.Point(112, 153)
+        Me.txtCouture.Name = "txtCouture"
+        Me.txtCouture.Size = New System.Drawing.Size(128, 20)
+        Me.txtCouture.TabIndex = 0
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(58, 160)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(50, 13)
+        Me.Label6.TabIndex = 1
+        Me.Label6.Text = "Couture :"
+        '
+        'txtInitiales
+        '
+        Me.txtInitiales.Location = New System.Drawing.Point(112, 192)
+        Me.txtInitiales.Name = "txtInitiales"
+        Me.txtInitiales.Size = New System.Drawing.Size(128, 20)
+        Me.txtInitiales.TabIndex = 0
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(58, 199)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(45, 13)
+        Me.Label7.TabIndex = 1
+        Me.Label7.Text = "Initiales:"
+        '
+        'cboCollection
+        '
+        Me.cboCollection.FormattingEnabled = True
+        Me.cboCollection.Location = New System.Drawing.Point(114, 231)
+        Me.cboCollection.Name = "cboCollection"
+        Me.cboCollection.Size = New System.Drawing.Size(125, 21)
+        Me.cboCollection.TabIndex = 3
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(46, 234)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(54, 13)
+        Me.Label8.TabIndex = 1
+        Me.Label8.Text = "Colection:"
         '
         'frmAjoutProduit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(352, 331)
-        Me.Controls.Add(Me.ListBox1)
+        Me.ClientSize = New System.Drawing.Size(529, 496)
+        Me.Controls.Add(Me.cboCollection)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtPrixBase)
+        Me.Controls.Add(Me.txtInitiales)
+        Me.Controls.Add(Me.txtCouture)
         Me.Controls.Add(Me.txtMatiere)
+        Me.Controls.Add(Me.txtDescription)
         Me.Controls.Add(Me.txtNomModele)
         Me.Name = "frmAjoutProduit"
         Me.Text = "frmAjoutProduit"
@@ -123,5 +194,12 @@ Partial Class frmAjoutProduit
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents txtMatiere As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents txtDescription As System.Windows.Forms.TextBox
+    Friend WithEvents txtCouture As System.Windows.Forms.TextBox
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents txtInitiales As System.Windows.Forms.TextBox
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents cboCollection As System.Windows.Forms.ComboBox
+    Friend WithEvents Label8 As System.Windows.Forms.Label
 End Class
