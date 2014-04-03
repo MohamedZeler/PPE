@@ -27,7 +27,6 @@ Partial Class FrmMenuSOKA
         Me.btnMails = New System.Windows.Forms.Button()
         Me.btnCatalogue = New System.Windows.Forms.Button()
         Me.btnGestionCli = New System.Windows.Forms.Button()
-        Me.btnGestionProd = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -75,21 +74,11 @@ Partial Class FrmMenuSOKA
         Me.btnGestionCli.Text = "Gestion de la clientèle"
         Me.btnGestionCli.UseVisualStyleBackColor = True
         '
-        'btnGestionProd
-        '
-        Me.btnGestionProd.Location = New System.Drawing.Point(68, 160)
-        Me.btnGestionProd.Name = "btnGestionProd"
-        Me.btnGestionProd.Size = New System.Drawing.Size(132, 24)
-        Me.btnGestionProd.TabIndex = 5
-        Me.btnGestionProd.Text = "Gestion des produits"
-        Me.btnGestionProd.UseVisualStyleBackColor = True
-        '
         'FrmMenuSOKA
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 261)
-        Me.Controls.Add(Me.btnGestionProd)
         Me.Controls.Add(Me.btnGestionCli)
         Me.Controls.Add(Me.btnCatalogue)
         Me.Controls.Add(Me.btnMails)
@@ -106,5 +95,4 @@ Partial Class FrmMenuSOKA
     Friend WithEvents btnMails As System.Windows.Forms.Button
     Friend WithEvents btnCatalogue As System.Windows.Forms.Button
     Friend WithEvents btnGestionCli As System.Windows.Forms.Button
-    Friend WithEvents btnGestionProd As System.Windows.Forms.Button
 End Class
