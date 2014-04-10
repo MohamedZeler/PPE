@@ -37,19 +37,31 @@ Partial Class frmAjoutProduit
         Me.Label7 = New System.Windows.Forms.Label()
         Me.cboCollection = New System.Windows.Forms.ComboBox()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.cboPublic = New System.Windows.Forms.ComboBox()
+        Me.TextSemelleInterieure = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.TextSemelle = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.TextTalon = New System.Windows.Forms.TextBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.TextConfort = New System.Windows.Forms.TextBox()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.TextPlus = New System.Windows.Forms.TextBox()
+        Me.Label14 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'txtNomModele
         '
-        Me.txtNomModele.Location = New System.Drawing.Point(112, 6)
+        Me.txtNomModele.Location = New System.Drawing.Point(121, 6)
         Me.txtNomModele.Name = "txtNomModele"
         Me.txtNomModele.Size = New System.Drawing.Size(128, 20)
-        Me.txtNomModele.TabIndex = 0
+        Me.txtNomModele.TabIndex = 1
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(33, 9)
+        Me.Label1.Location = New System.Drawing.Point(42, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(73, 13)
         Me.Label1.TabIndex = 1
@@ -58,7 +70,9 @@ Partial Class frmAjoutProduit
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(49, 82)
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.Label2.Location = New System.Drawing.Point(58, 82)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(57, 13)
         Me.Label2.TabIndex = 1
@@ -66,15 +80,17 @@ Partial Class frmAjoutProduit
         '
         'txtPrixBase
         '
-        Me.txtPrixBase.Location = New System.Drawing.Point(112, 79)
+        Me.txtPrixBase.Location = New System.Drawing.Point(121, 79)
         Me.txtPrixBase.Name = "txtPrixBase"
         Me.txtPrixBase.Size = New System.Drawing.Size(39, 20)
-        Me.txtPrixBase.TabIndex = 0
+        Me.txtPrixBase.TabIndex = 3
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(157, 82)
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.Label3.Location = New System.Drawing.Point(166, 82)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(13, 13)
         Me.Label3.TabIndex = 1
@@ -82,15 +98,17 @@ Partial Class frmAjoutProduit
         '
         'txtMatiere
         '
-        Me.txtMatiere.Location = New System.Drawing.Point(112, 115)
+        Me.txtMatiere.Location = New System.Drawing.Point(121, 115)
         Me.txtMatiere.Name = "txtMatiere"
         Me.txtMatiere.Size = New System.Drawing.Size(128, 20)
-        Me.txtMatiere.TabIndex = 0
+        Me.txtMatiere.TabIndex = 4
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(58, 122)
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.Label4.Location = New System.Drawing.Point(67, 122)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(48, 13)
         Me.Label4.TabIndex = 1
@@ -99,7 +117,7 @@ Partial Class frmAjoutProduit
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(40, 46)
+        Me.Label5.Location = New System.Drawing.Point(49, 46)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(66, 13)
         Me.Label5.TabIndex = 2
@@ -107,22 +125,24 @@ Partial Class frmAjoutProduit
         '
         'txtDescription
         '
-        Me.txtDescription.Location = New System.Drawing.Point(112, 43)
+        Me.txtDescription.Location = New System.Drawing.Point(121, 43)
         Me.txtDescription.Name = "txtDescription"
         Me.txtDescription.Size = New System.Drawing.Size(128, 20)
-        Me.txtDescription.TabIndex = 0
+        Me.txtDescription.TabIndex = 2
         '
         'txtCouture
         '
-        Me.txtCouture.Location = New System.Drawing.Point(112, 153)
+        Me.txtCouture.Location = New System.Drawing.Point(121, 153)
         Me.txtCouture.Name = "txtCouture"
         Me.txtCouture.Size = New System.Drawing.Size(128, 20)
-        Me.txtCouture.TabIndex = 0
+        Me.txtCouture.TabIndex = 5
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(58, 160)
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.Label6.Location = New System.Drawing.Point(67, 160)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(50, 13)
         Me.Label6.TabIndex = 1
@@ -130,15 +150,17 @@ Partial Class frmAjoutProduit
         '
         'txtInitiales
         '
-        Me.txtInitiales.Location = New System.Drawing.Point(112, 192)
+        Me.txtInitiales.Location = New System.Drawing.Point(121, 192)
         Me.txtInitiales.Name = "txtInitiales"
         Me.txtInitiales.Size = New System.Drawing.Size(128, 20)
-        Me.txtInitiales.TabIndex = 0
+        Me.txtInitiales.TabIndex = 6
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(58, 199)
+        Me.Label7.BackColor = System.Drawing.Color.Transparent
+        Me.Label7.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.Label7.Location = New System.Drawing.Point(67, 199)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(45, 13)
         Me.Label7.TabIndex = 1
@@ -147,19 +169,130 @@ Partial Class frmAjoutProduit
         'cboCollection
         '
         Me.cboCollection.FormattingEnabled = True
-        Me.cboCollection.Location = New System.Drawing.Point(114, 231)
+        Me.cboCollection.Location = New System.Drawing.Point(123, 231)
         Me.cboCollection.Name = "cboCollection"
         Me.cboCollection.Size = New System.Drawing.Size(125, 21)
-        Me.cboCollection.TabIndex = 3
+        Me.cboCollection.TabIndex = 7
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(46, 234)
+        Me.Label8.BackColor = System.Drawing.Color.Transparent
+        Me.Label8.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.Label8.Location = New System.Drawing.Point(55, 234)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(54, 13)
         Me.Label8.TabIndex = 1
         Me.Label8.Text = "Colection:"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.Transparent
+        Me.Label9.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.Label9.Location = New System.Drawing.Point(67, 274)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(39, 13)
+        Me.Label9.TabIndex = 1
+        Me.Label9.Text = "Public:"
+        '
+        'cboPublic
+        '
+        Me.cboPublic.FormattingEnabled = True
+        Me.cboPublic.Location = New System.Drawing.Point(121, 271)
+        Me.cboPublic.Name = "cboPublic"
+        Me.cboPublic.Size = New System.Drawing.Size(125, 21)
+        Me.cboPublic.TabIndex = 8
+        '
+        'TextSemelleInterieure
+        '
+        Me.TextSemelleInterieure.Location = New System.Drawing.Point(120, 309)
+        Me.TextSemelleInterieure.Name = "TextSemelleInterieure"
+        Me.TextSemelleInterieure.Size = New System.Drawing.Size(128, 20)
+        Me.TextSemelleInterieure.TabIndex = 9
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.Transparent
+        Me.Label10.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.Label10.Location = New System.Drawing.Point(11, 312)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(97, 13)
+        Me.Label10.TabIndex = 2
+        Me.Label10.Text = "Semelle Interieure :"
+        '
+        'TextSemelle
+        '
+        Me.TextSemelle.Location = New System.Drawing.Point(120, 346)
+        Me.TextSemelle.Name = "TextSemelle"
+        Me.TextSemelle.Size = New System.Drawing.Size(128, 20)
+        Me.TextSemelle.TabIndex = 10
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.Transparent
+        Me.Label11.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.Label11.Location = New System.Drawing.Point(58, 349)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(50, 13)
+        Me.Label11.TabIndex = 2
+        Me.Label11.Text = "Semelle :"
+        '
+        'TextTalon
+        '
+        Me.TextTalon.Location = New System.Drawing.Point(120, 383)
+        Me.TextTalon.Name = "TextTalon"
+        Me.TextTalon.Size = New System.Drawing.Size(128, 20)
+        Me.TextTalon.TabIndex = 11
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.BackColor = System.Drawing.Color.Transparent
+        Me.Label12.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.Label12.Location = New System.Drawing.Point(58, 386)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(40, 13)
+        Me.Label12.TabIndex = 2
+        Me.Label12.Text = "Talon :"
+        '
+        'TextConfort
+        '
+        Me.TextConfort.Location = New System.Drawing.Point(120, 418)
+        Me.TextConfort.Name = "TextConfort"
+        Me.TextConfort.Size = New System.Drawing.Size(128, 20)
+        Me.TextConfort.TabIndex = 12
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.BackColor = System.Drawing.Color.Transparent
+        Me.Label13.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.Label13.Location = New System.Drawing.Point(58, 421)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(47, 13)
+        Me.Label13.TabIndex = 2
+        Me.Label13.Text = "Confort :"
+        '
+        'TextPlus
+        '
+        Me.TextPlus.Location = New System.Drawing.Point(120, 454)
+        Me.TextPlus.Name = "TextPlus"
+        Me.TextPlus.Size = New System.Drawing.Size(128, 20)
+        Me.TextPlus.TabIndex = 13
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.BackColor = System.Drawing.Color.Transparent
+        Me.Label14.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.Label14.Location = New System.Drawing.Point(58, 457)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(36, 13)
+        Me.Label14.TabIndex = 2
+        Me.Label14.Text = "Plus  :"
         '
         'frmAjoutProduit
         '
@@ -167,9 +300,16 @@ Partial Class frmAjoutProduit
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.soka.My.Resources.Resources.Fond_
         Me.ClientSize = New System.Drawing.Size(529, 496)
+        Me.Controls.Add(Me.cboPublic)
         Me.Controls.Add(Me.cboCollection)
+        Me.Controls.Add(Me.Label14)
+        Me.Controls.Add(Me.Label13)
+        Me.Controls.Add(Me.Label12)
+        Me.Controls.Add(Me.Label11)
+        Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
@@ -180,6 +320,11 @@ Partial Class frmAjoutProduit
         Me.Controls.Add(Me.txtInitiales)
         Me.Controls.Add(Me.txtCouture)
         Me.Controls.Add(Me.txtMatiere)
+        Me.Controls.Add(Me.TextPlus)
+        Me.Controls.Add(Me.TextConfort)
+        Me.Controls.Add(Me.TextTalon)
+        Me.Controls.Add(Me.TextSemelle)
+        Me.Controls.Add(Me.TextSemelleInterieure)
         Me.Controls.Add(Me.txtDescription)
         Me.Controls.Add(Me.txtNomModele)
         Me.Name = "frmAjoutProduit"
@@ -203,4 +348,16 @@ Partial Class frmAjoutProduit
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents cboCollection As System.Windows.Forms.ComboBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents cboPublic As System.Windows.Forms.ComboBox
+    Friend WithEvents TextSemelleInterieure As System.Windows.Forms.TextBox
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents TextSemelle As System.Windows.Forms.TextBox
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents TextTalon As System.Windows.Forms.TextBox
+    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents TextConfort As System.Windows.Forms.TextBox
+    Friend WithEvents Label13 As System.Windows.Forms.Label
+    Friend WithEvents TextPlus As System.Windows.Forms.TextBox
+    Friend WithEvents Label14 As System.Windows.Forms.Label
 End Class
