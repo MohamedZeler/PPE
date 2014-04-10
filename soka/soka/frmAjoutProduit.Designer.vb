@@ -49,6 +49,8 @@ Partial Class frmAjoutProduit
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Label1.Location = New System.Drawing.Point(33, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(73, 13)
@@ -58,6 +60,8 @@ Partial Class frmAjoutProduit
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Label2.Location = New System.Drawing.Point(49, 82)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(57, 13)
@@ -90,6 +94,8 @@ Partial Class frmAjoutProduit
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Label4.Location = New System.Drawing.Point(58, 122)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(48, 13)
@@ -99,6 +105,8 @@ Partial Class frmAjoutProduit
         'Label5
         '
         Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Label5.Location = New System.Drawing.Point(40, 46)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(66, 13)
@@ -122,6 +130,8 @@ Partial Class frmAjoutProduit
         'Label6
         '
         Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Label6.Location = New System.Drawing.Point(58, 160)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(50, 13)
@@ -138,6 +148,8 @@ Partial Class frmAjoutProduit
         'Label7
         '
         Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.Transparent
+        Me.Label7.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Label7.Location = New System.Drawing.Point(58, 199)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(45, 13)
@@ -155,6 +167,8 @@ Partial Class frmAjoutProduit
         'Label8
         '
         Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.Color.Transparent
+        Me.Label8.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Label8.Location = New System.Drawing.Point(46, 234)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(54, 13)
