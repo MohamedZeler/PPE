@@ -127,13 +127,7 @@
   <data name="ttipi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ttipi.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Alaia feuille Morte enfant" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Alaia feuille Morte enfant.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="chaussure femme" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\chaussure femme.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Patxi raye chevron" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Patxi raye chevron.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Fond " type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fond .jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

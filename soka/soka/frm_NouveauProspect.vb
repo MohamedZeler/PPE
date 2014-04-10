@@ -6,9 +6,4 @@
         frm_AjouterEntreprise.Show()
 
     End Sub
-
-    Private Sub frm_NouveauProspect_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-
-    End Sub
 End Class
