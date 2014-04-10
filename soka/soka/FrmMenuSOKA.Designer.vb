@@ -23,10 +23,10 @@ Partial Class FrmMenuSOKA
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.btnParametre = New System.Windows.Forms.Button()
         Me.btnMails = New System.Windows.Forms.Button()
         Me.btnCatalogue = New System.Windows.Forms.Button()
         Me.btnGestionCli = New System.Windows.Forms.Button()
+        Me.btnParametre = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -40,15 +40,6 @@ Partial Class FrmMenuSOKA
         Me.Label1.Size = New System.Drawing.Size(112, 39)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "SOKA"
-        '
-        'btnParametre
-        '
-        Me.btnParametre.Location = New System.Drawing.Point(12, 12)
-        Me.btnParametre.Name = "btnParametre"
-        Me.btnParametre.Size = New System.Drawing.Size(75, 23)
-        Me.btnParametre.TabIndex = 1
-        Me.btnParametre.Text = "Paramètres"
-        Me.btnParametre.UseVisualStyleBackColor = True
         '
         'btnMails
         '
@@ -77,6 +68,15 @@ Partial Class FrmMenuSOKA
         Me.btnGestionCli.Text = "Gestion de la clientèle"
         Me.btnGestionCli.UseVisualStyleBackColor = True
         '
+        'btnParametre
+        '
+        Me.btnParametre.Location = New System.Drawing.Point(12, 12)
+        Me.btnParametre.Name = "btnParametre"
+        Me.btnParametre.Size = New System.Drawing.Size(75, 23)
+        Me.btnParametre.TabIndex = 1
+        Me.btnParametre.Text = "Paramètres"
+        Me.btnParametre.UseVisualStyleBackColor = True
+        '
         'FrmMenuSOKA
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -96,8 +96,8 @@ Partial Class FrmMenuSOKA
 
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents btnParametre As System.Windows.Forms.Button
     Friend WithEvents btnMails As System.Windows.Forms.Button
     Friend WithEvents btnCatalogue As System.Windows.Forms.Button
     Friend WithEvents btnGestionCli As System.Windows.Forms.Button
+    Friend WithEvents btnParametre As System.Windows.Forms.Button
 End Class
