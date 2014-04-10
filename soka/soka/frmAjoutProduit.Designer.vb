@@ -49,6 +49,7 @@ Partial Class frmAjoutProduit
         Me.Label13 = New System.Windows.Forms.Label()
         Me.TextPlus = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'txtNomModele
@@ -294,12 +295,22 @@ Partial Class frmAjoutProduit
         Me.Label14.TabIndex = 2
         Me.Label14.Text = "Plus  :"
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(357, 89)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(116, 33)
+        Me.Button1.TabIndex = 14
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'frmAjoutProduit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.soka.My.Resources.Resources.Fond_
         Me.ClientSize = New System.Drawing.Size(529, 496)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.cboPublic)
         Me.Controls.Add(Me.cboCollection)
         Me.Controls.Add(Me.Label14)
@@ -360,4 +371,5 @@ Partial Class frmAjoutProduit
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents TextPlus As System.Windows.Forms.TextBox
     Friend WithEvents Label14 As System.Windows.Forms.Label
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class

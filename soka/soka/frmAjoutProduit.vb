@@ -18,7 +18,7 @@ Public Class frmAjoutProduit
             cboCollection.Items.Add(jeuEnr(1))
         End While
         jeuEnr.Close()
-        cmd.CommandText = "SELECT CodePublic, IntitulePublic FROM PUBLIC2"
+        cmd.CommandText = "SELECT CodePublic, IntitulePublic FROM PUBLIC1"
         Dim jeuEnr2 As SqlDataReader
         jeuEnr2 = cmd.ExecuteReader()
         While jeuEnr2.Read
@@ -31,5 +31,11 @@ Public Class frmAjoutProduit
 
     Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click, Label8.Click, Label9.Click
 
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        cnn = New SqlConnection("Data Source=172.30.0.115;Initial Catalog=SOKA_GestionCo;User ID=SIO1;Password=SIO1MDP")
+        cnn.Open()
+        cnn.Close()
     End Sub
 End Class
