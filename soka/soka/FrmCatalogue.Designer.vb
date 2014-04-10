@@ -104,6 +104,8 @@ Partial Class FrmCatalogue
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Label1.Location = New System.Drawing.Point(443, 150)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(66, 13)

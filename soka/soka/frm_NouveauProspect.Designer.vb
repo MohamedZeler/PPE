@@ -46,7 +46,9 @@ Partial Class frm_NouveauProspect
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!)
+        Me.Label1.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Label1.Location = New System.Drawing.Point(23, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(238, 31)
@@ -56,24 +58,28 @@ Partial Class frm_NouveauProspect
         'rbtn_madame
         '
         Me.rbtn_madame.AutoSize = True
+        Me.rbtn_madame.BackColor = System.Drawing.Color.Transparent
+        Me.rbtn_madame.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.rbtn_madame.Location = New System.Drawing.Point(64, 71)
         Me.rbtn_madame.Name = "rbtn_madame"
         Me.rbtn_madame.Size = New System.Drawing.Size(66, 17)
         Me.rbtn_madame.TabIndex = 1
         Me.rbtn_madame.TabStop = True
         Me.rbtn_madame.Text = "Madame"
-        Me.rbtn_madame.UseVisualStyleBackColor = True
+        Me.rbtn_madame.UseVisualStyleBackColor = False
         '
         'rbtn_monsieur
         '
         Me.rbtn_monsieur.AutoSize = True
+        Me.rbtn_monsieur.BackColor = System.Drawing.Color.Transparent
+        Me.rbtn_monsieur.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.rbtn_monsieur.Location = New System.Drawing.Point(136, 71)
         Me.rbtn_monsieur.Name = "rbtn_monsieur"
         Me.rbtn_monsieur.Size = New System.Drawing.Size(68, 17)
         Me.rbtn_monsieur.TabIndex = 2
         Me.rbtn_monsieur.TabStop = True
         Me.rbtn_monsieur.Text = "Monsieur"
-        Me.rbtn_monsieur.UseVisualStyleBackColor = True
+        Me.rbtn_monsieur.UseVisualStyleBackColor = False
         '
         'txt_nomprospect
         '
@@ -85,6 +91,8 @@ Partial Class frm_NouveauProspect
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Label2.Location = New System.Drawing.Point(13, 97)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(38, 13)
@@ -101,6 +109,8 @@ Partial Class frm_NouveauProspect
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Label3.Location = New System.Drawing.Point(12, 123)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(49, 13)
@@ -110,6 +120,8 @@ Partial Class frm_NouveauProspect
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Label4.Location = New System.Drawing.Point(16, 174)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(35, 13)
@@ -166,6 +178,8 @@ Partial Class frm_NouveauProspect
         'Label8
         '
         Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.Color.Transparent
+        Me.Label8.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Label8.Location = New System.Drawing.Point(16, 317)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(60, 13)
@@ -192,10 +206,12 @@ Partial Class frm_NouveauProspect
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.txt_telportable)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.txt_teldomicile)
+        Me.GroupBox1.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.GroupBox1.Location = New System.Drawing.Point(16, 206)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(230, 78)

@@ -136,7 +136,7 @@ Partial Class frm_AjouterEntreprise
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.GroupBox1.Location = New System.Drawing.Point(15, 94)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(188, 126)
+        Me.GroupBox1.Size = New System.Drawing.Size(188, 111)
         Me.GroupBox1.TabIndex = 9
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Localisation"
