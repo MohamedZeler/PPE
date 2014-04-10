@@ -33,14 +33,13 @@ Public Class frm_AjouterEntreprise
 
         Dim cnn As SqlConnection
 
-        cnn = New SqlConnection("DataSource=172.30.0.115;InitialCatalog=SOKA_GestionCo;UserID=SIO1;Password=SIO1MDP")
+        cnn = New SqlConnection("Data Source=172.30.0.115;Initial Catalog=SOKA_GestionCo;User ID=SIO1;Password=SIO1MDP")
 
         cnn.Open()
 
         Dim cmd As SqlCommand
         Dim query As SqlCommand
         Dim JeuEnr As SqlDataReader
-        Dim textsql As String
 
         query = New SqlCommand()
 
@@ -49,13 +48,18 @@ Public Class frm_AjouterEntreprise
         query.CommandText = "SELECT CodePays FROM PAYS WHERE Libpays = '" & cbo_paysentreprise.Text & "'"
 
         JeuEnr = query.ExecuteReader()
-        MsgBox(JeuEnr.GetValue(1))
+        JeuEnr.Close()
 
 
         cmd = New SqlCommand()
         cmd.Connection = cnn
-        cmd.CommandText = "INSERT INTO ENTREPRISE(IdEntreprise, RaisonSociale, AdresseRue, CodePostal, Ville, TelStandard, Mail, CodePays) VALUES("", '" & txt_designation.Text & "', '" & txt_adresse.Text & "', '" & txt_cpentreprise.Text & "', '" & txt_villeentreprise.Text & "', '" & txt_mailentreprise.Text & "', 'FRA' )"
+        cmd.CommandText = "INSERT INTO ENTREPRISE(RaisonSociale, AdresseRue, CodePostal, Ville, TelStandard, Mail, CodePays) VALUES('" & txt_designation.Text & "', '" & txt_adresse.Text & "', '" & txt_cpentreprise.Text & "', '" & txt_villeentreprise.Text & "', '" & txt_telentreprise.Text & "', '" & txt_mailentreprise.Text & "', '" & JeuEnr.GetValue(0) & "' )"
+        cmd.ExecuteNonQuery()
 
+        cnn.Close()
 
+        refreshcboentreprise()
+
+        Me.Close()
     End Sub
 End Class

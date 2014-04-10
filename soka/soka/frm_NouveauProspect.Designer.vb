@@ -35,7 +35,7 @@ Partial Class frm_NouveauProspect
         Me.Label5 = New System.Windows.Forms.Label()
         Me.txt_telportable = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.cmbox_entreprises = New System.Windows.Forms.ComboBox()
+        Me.cbo_entreprises = New System.Windows.Forms.ComboBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.btn_addprospect = New System.Windows.Forms.Button()
         Me.btn_addentreprise = New System.Windows.Forms.Button()
@@ -155,13 +155,13 @@ Partial Class frm_NouveauProspect
         Me.Label7.TabIndex = 13
         Me.Label7.Text = "Portable :"
         '
-        'cmbox_entreprises
+        'cbo_entreprises
         '
-        Me.cmbox_entreprises.FormattingEnabled = True
-        Me.cmbox_entreprises.Location = New System.Drawing.Point(82, 314)
-        Me.cmbox_entreprises.Name = "cmbox_entreprises"
-        Me.cmbox_entreprises.Size = New System.Drawing.Size(121, 21)
-        Me.cmbox_entreprises.TabIndex = 15
+        Me.cbo_entreprises.FormattingEnabled = True
+        Me.cbo_entreprises.Location = New System.Drawing.Point(82, 314)
+        Me.cbo_entreprises.Name = "cbo_entreprises"
+        Me.cbo_entreprises.Size = New System.Drawing.Size(121, 21)
+        Me.cbo_entreprises.TabIndex = 15
         '
         'Label8
         '
@@ -213,7 +213,7 @@ Partial Class frm_NouveauProspect
         Me.Controls.Add(Me.btn_addentreprise)
         Me.Controls.Add(Me.btn_addprospect)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.cmbox_entreprises)
+        Me.Controls.Add(Me.cbo_entreprises)
         Me.Controls.Add(Me.txt_mailprospect)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -244,7 +244,7 @@ Partial Class frm_NouveauProspect
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents txt_telportable As System.Windows.Forms.TextBox
     Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents cmbox_entreprises As System.Windows.Forms.ComboBox
+    Friend WithEvents cbo_entreprises As System.Windows.Forms.ComboBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents btn_addprospect As System.Windows.Forms.Button
     Friend WithEvents btn_addentreprise As System.Windows.Forms.Button
