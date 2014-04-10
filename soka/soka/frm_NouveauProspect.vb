@@ -34,7 +34,7 @@ Public Class frm_NouveauProspect
 
         cmd = New SqlCommand()
         cmd.Connection = cnn
-        cmd.CommandText = "INSERT INTO CONTACT(Titre, NomContact, PrenomContact, MailContact, TelInterneContact, TelPortable, IdEntreprise) VALUES('" &  & "', '" & txt_nomprospect.Text & "', '" & txt_prenomprospect.Text & "', '" & txt_mailprospect.Text & "', '" & txt_teldomicile.Text & "', '" & txt_telportable.Text & "', 'FRA' )"
+        'cmd.CommandText = "INSERT INTO CONTACT(Titre, NomContact, PrenomContact, MailContact, TelInterneContact, TelPortable, IdEntreprise) VALUES('" &  & "', '" & txt_nomprospect.Text & "', '" & txt_prenomprospect.Text & "', '" & txt_mailprospect.Text & "', '" & txt_teldomicile.Text & "', '" & txt_telportable.Text & "', 'FRA' )"
         cmd.ExecuteNonQuery()
 
         cnn.Close()
