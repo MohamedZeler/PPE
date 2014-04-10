@@ -40,9 +40,7 @@ Partial Class frm_AccueilClient
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!)
-        Me.Label1.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Label1.Location = New System.Drawing.Point(121, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(274, 31)
@@ -102,8 +100,6 @@ Partial Class frm_AccueilClient
         'lbl_nomprospect
         '
         Me.lbl_nomprospect.AutoSize = True
-        Me.lbl_nomprospect.BackColor = System.Drawing.Color.Transparent
-        Me.lbl_nomprospect.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.lbl_nomprospect.Location = New System.Drawing.Point(64, 146)
         Me.lbl_nomprospect.Name = "lbl_nomprospect"
         Me.lbl_nomprospect.Size = New System.Drawing.Size(38, 13)
@@ -113,8 +109,6 @@ Partial Class frm_AccueilClient
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Label2.Location = New System.Drawing.Point(64, 176)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(52, 13)

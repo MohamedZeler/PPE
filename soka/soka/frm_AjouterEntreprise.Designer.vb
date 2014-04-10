@@ -45,10 +45,8 @@ Partial Class frm_AjouterEntreprise
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!)
-        Me.Label1.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.Label1.Location = New System.Drawing.Point(46, 9)
+        Me.Label1.Location = New System.Drawing.Point(42, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(248, 31)
         Me.Label1.TabIndex = 0
@@ -56,7 +54,7 @@ Partial Class frm_AjouterEntreprise
         '
         'txt_designation
         '
-        Me.txt_designation.Location = New System.Drawing.Point(91, 68)
+        Me.txt_designation.Location = New System.Drawing.Point(84, 68)
         Me.txt_designation.Name = "txt_designation"
         Me.txt_designation.Size = New System.Drawing.Size(100, 20)
         Me.txt_designation.TabIndex = 1
@@ -64,19 +62,15 @@ Partial Class frm_AjouterEntreprise
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.Label2.Location = New System.Drawing.Point(3, 71)
+        Me.Label2.Location = New System.Drawing.Point(12, 71)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(82, 15)
+        Me.Label2.Size = New System.Drawing.Size(72, 13)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Désignation : "
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Label3.Location = New System.Drawing.Point(21, 34)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(51, 13)
@@ -86,7 +80,6 @@ Partial Class frm_AjouterEntreprise
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Label4.Location = New System.Drawing.Point(2, 60)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(70, 13)
@@ -96,7 +89,6 @@ Partial Class frm_AjouterEntreprise
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Label5.Location = New System.Drawing.Point(40, 86)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(32, 13)
@@ -126,14 +118,12 @@ Partial Class frm_AjouterEntreprise
         '
         'GroupBox1
         '
-        Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.Controls.Add(Me.txt_villeentreprise)
         Me.GroupBox1.Controls.Add(Me.txt_cpentreprise)
         Me.GroupBox1.Controls.Add(Me.txt_adresse)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.GroupBox1.Location = New System.Drawing.Point(15, 94)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(188, 126)
@@ -144,8 +134,6 @@ Partial Class frm_AjouterEntreprise
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Label6.Location = New System.Drawing.Point(23, 229)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(64, 13)
@@ -162,8 +150,6 @@ Partial Class frm_AjouterEntreprise
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.BackColor = System.Drawing.Color.Transparent
-        Me.Label7.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Label7.Location = New System.Drawing.Point(53, 255)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(32, 13)
@@ -188,8 +174,6 @@ Partial Class frm_AjouterEntreprise
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.BackColor = System.Drawing.Color.Transparent
-        Me.Label8.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Label8.Location = New System.Drawing.Point(49, 291)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(36, 13)
