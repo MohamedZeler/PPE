@@ -24,7 +24,7 @@ Public Class frmAjoutProduit
         While jeuEnr2.Read
             cboPublic.Items.Add(jeuEnr2(1))
         End While
-       
+
         cnn.Close()
     End Sub
 
