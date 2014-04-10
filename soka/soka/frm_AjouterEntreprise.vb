@@ -8,7 +8,7 @@ Public Class frm_AjouterEntreprise
 
         Dim cnn As SqlConnection
 
-        cnn = New SqlConnection("DataSource=172.30.0.115;InitialCatalog=SOKA_GestionCo;UserID=SIO1;Password=SIO1MDP")
+        cnn = New SqlConnection("Data Source=172.30.0.115;Initial Catalog=SOKA_GestionCo;User ID=SIO1;Password=SIO1MDP")
 
         cnn.Open()
 
@@ -17,13 +17,12 @@ Public Class frm_AjouterEntreprise
 
         cmd = New SqlCommand()
         cmd.Connection = cnn
-        cmd.CommandText = "SELECT * FROM PAYS"
+        cmd.CommandText = "SELECT Libpays FROM PAYS"
 
         JeuEnr = cmd.ExecuteReader()
-        MsgBox(JeuEnr.GetValue(1))
 
         While JeuEnr.Read()
-            cbo_paysentreprise.Items.Add(JeuEnr.GetValue(1))
+            cbo_paysentreprise.Items.Add(JeuEnr.GetValue(0))
         End While
 
         JeuEnr.Close()
