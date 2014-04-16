@@ -39,17 +39,23 @@ Partial Class frmAjoutProduit
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.cboPublic = New System.Windows.Forms.ComboBox()
-        Me.TextSemelleInterieure = New System.Windows.Forms.TextBox()
+        Me.TxtSemelleInterieure = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.TextSemelle = New System.Windows.Forms.TextBox()
+        Me.TxtSemelle = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.TextTalon = New System.Windows.Forms.TextBox()
+        Me.TxtTalon = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.TextConfort = New System.Windows.Forms.TextBox()
+        Me.TxtConfort = New System.Windows.Forms.TextBox()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.TextPlus = New System.Windows.Forms.TextBox()
+        Me.TxtPlus = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.txtFermeture = New System.Windows.Forms.TextBox()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.txtPhoto = New System.Windows.Forms.TextBox()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.btnParcourir = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'txtNomModele
@@ -62,6 +68,8 @@ Partial Class frmAjoutProduit
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Label1.Location = New System.Drawing.Point(42, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(73, 13)
@@ -118,6 +126,8 @@ Partial Class frmAjoutProduit
         'Label5
         '
         Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Label5.Location = New System.Drawing.Point(49, 46)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(66, 13)
@@ -191,7 +201,7 @@ Partial Class frmAjoutProduit
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.Color.Transparent
         Me.Label9.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.Label9.Location = New System.Drawing.Point(67, 274)
+        Me.Label9.Location = New System.Drawing.Point(66, 274)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(39, 13)
         Me.Label9.TabIndex = 1
@@ -205,66 +215,66 @@ Partial Class frmAjoutProduit
         Me.cboPublic.Size = New System.Drawing.Size(125, 21)
         Me.cboPublic.TabIndex = 8
         '
-        'TextSemelleInterieure
+        'TxtSemelleInterieure
         '
-        Me.TextSemelleInterieure.Location = New System.Drawing.Point(120, 309)
-        Me.TextSemelleInterieure.Name = "TextSemelleInterieure"
-        Me.TextSemelleInterieure.Size = New System.Drawing.Size(128, 20)
-        Me.TextSemelleInterieure.TabIndex = 9
+        Me.TxtSemelleInterieure.Location = New System.Drawing.Point(120, 309)
+        Me.TxtSemelleInterieure.Name = "TxtSemelleInterieure"
+        Me.TxtSemelleInterieure.Size = New System.Drawing.Size(128, 20)
+        Me.TxtSemelleInterieure.TabIndex = 9
         '
         'Label10
         '
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.Color.Transparent
         Me.Label10.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.Label10.Location = New System.Drawing.Point(11, 312)
+        Me.Label10.Location = New System.Drawing.Point(8, 312)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(97, 13)
         Me.Label10.TabIndex = 2
         Me.Label10.Text = "Semelle Interieure :"
         '
-        'TextSemelle
+        'TxtSemelle
         '
-        Me.TextSemelle.Location = New System.Drawing.Point(120, 346)
-        Me.TextSemelle.Name = "TextSemelle"
-        Me.TextSemelle.Size = New System.Drawing.Size(128, 20)
-        Me.TextSemelle.TabIndex = 10
+        Me.TxtSemelle.Location = New System.Drawing.Point(120, 346)
+        Me.TxtSemelle.Name = "TxtSemelle"
+        Me.TxtSemelle.Size = New System.Drawing.Size(128, 20)
+        Me.TxtSemelle.TabIndex = 10
         '
         'Label11
         '
         Me.Label11.AutoSize = True
         Me.Label11.BackColor = System.Drawing.Color.Transparent
         Me.Label11.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.Label11.Location = New System.Drawing.Point(58, 349)
+        Me.Label11.Location = New System.Drawing.Point(55, 349)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(50, 13)
         Me.Label11.TabIndex = 2
         Me.Label11.Text = "Semelle :"
         '
-        'TextTalon
+        'TxtTalon
         '
-        Me.TextTalon.Location = New System.Drawing.Point(120, 383)
-        Me.TextTalon.Name = "TextTalon"
-        Me.TextTalon.Size = New System.Drawing.Size(128, 20)
-        Me.TextTalon.TabIndex = 11
+        Me.TxtTalon.Location = New System.Drawing.Point(120, 383)
+        Me.TxtTalon.Name = "TxtTalon"
+        Me.TxtTalon.Size = New System.Drawing.Size(128, 20)
+        Me.TxtTalon.TabIndex = 11
         '
         'Label12
         '
         Me.Label12.AutoSize = True
         Me.Label12.BackColor = System.Drawing.Color.Transparent
         Me.Label12.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.Label12.Location = New System.Drawing.Point(58, 386)
+        Me.Label12.Location = New System.Drawing.Point(65, 390)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(40, 13)
         Me.Label12.TabIndex = 2
         Me.Label12.Text = "Talon :"
         '
-        'TextConfort
+        'TxtConfort
         '
-        Me.TextConfort.Location = New System.Drawing.Point(120, 418)
-        Me.TextConfort.Name = "TextConfort"
-        Me.TextConfort.Size = New System.Drawing.Size(128, 20)
-        Me.TextConfort.TabIndex = 12
+        Me.TxtConfort.Location = New System.Drawing.Point(120, 418)
+        Me.TxtConfort.Name = "TxtConfort"
+        Me.TxtConfort.Size = New System.Drawing.Size(128, 20)
+        Me.TxtConfort.TabIndex = 12
         '
         'Label13
         '
@@ -277,19 +287,19 @@ Partial Class frmAjoutProduit
         Me.Label13.TabIndex = 2
         Me.Label13.Text = "Confort :"
         '
-        'TextPlus
+        'TxtPlus
         '
-        Me.TextPlus.Location = New System.Drawing.Point(120, 454)
-        Me.TextPlus.Name = "TextPlus"
-        Me.TextPlus.Size = New System.Drawing.Size(128, 20)
-        Me.TextPlus.TabIndex = 13
+        Me.TxtPlus.Location = New System.Drawing.Point(120, 454)
+        Me.TxtPlus.Name = "TxtPlus"
+        Me.TxtPlus.Size = New System.Drawing.Size(128, 20)
+        Me.TxtPlus.TabIndex = 13
         '
         'Label14
         '
         Me.Label14.AutoSize = True
         Me.Label14.BackColor = System.Drawing.Color.Transparent
         Me.Label14.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.Label14.Location = New System.Drawing.Point(58, 457)
+        Me.Label14.Location = New System.Drawing.Point(69, 457)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(36, 13)
         Me.Label14.TabIndex = 2
@@ -297,22 +307,74 @@ Partial Class frmAjoutProduit
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(357, 89)
+        Me.Button1.Location = New System.Drawing.Point(330, 283)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(116, 33)
-        Me.Button1.TabIndex = 14
-        Me.Button1.Text = "Button1"
+        Me.Button1.TabIndex = 16
+        Me.Button1.Text = "Ajouter"
         Me.Button1.UseVisualStyleBackColor = True
+        '
+        'txtFermeture
+        '
+        Me.txtFermeture.Location = New System.Drawing.Point(120, 484)
+        Me.txtFermeture.Name = "txtFermeture"
+        Me.txtFermeture.Size = New System.Drawing.Size(128, 20)
+        Me.txtFermeture.TabIndex = 14
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.BackColor = System.Drawing.Color.Transparent
+        Me.Label15.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.Label15.Location = New System.Drawing.Point(42, 487)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(63, 13)
+        Me.Label15.TabIndex = 2
+        Me.Label15.Text = "Fermeture  :"
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
+        'txtPhoto
+        '
+        Me.txtPhoto.Location = New System.Drawing.Point(118, 521)
+        Me.txtPhoto.Name = "txtPhoto"
+        Me.txtPhoto.Size = New System.Drawing.Size(128, 20)
+        Me.txtPhoto.TabIndex = 15
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.BackColor = System.Drawing.Color.Transparent
+        Me.Label16.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.Label16.Location = New System.Drawing.Point(40, 524)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(44, 13)
+        Me.Label16.TabIndex = 2
+        Me.Label16.Text = "Photo  :"
+        '
+        'btnParcourir
+        '
+        Me.btnParcourir.Location = New System.Drawing.Point(252, 519)
+        Me.btnParcourir.Name = "btnParcourir"
+        Me.btnParcourir.Size = New System.Drawing.Size(75, 23)
+        Me.btnParcourir.TabIndex = 17
+        Me.btnParcourir.Text = "Parcourir"
+        Me.btnParcourir.UseVisualStyleBackColor = True
         '
         'frmAjoutProduit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.soka.My.Resources.Resources.Fond_
-        Me.ClientSize = New System.Drawing.Size(529, 496)
+        Me.ClientSize = New System.Drawing.Size(519, 569)
+        Me.Controls.Add(Me.btnParcourir)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.cboPublic)
         Me.Controls.Add(Me.cboCollection)
+        Me.Controls.Add(Me.Label16)
+        Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label12)
@@ -331,11 +393,13 @@ Partial Class frmAjoutProduit
         Me.Controls.Add(Me.txtInitiales)
         Me.Controls.Add(Me.txtCouture)
         Me.Controls.Add(Me.txtMatiere)
-        Me.Controls.Add(Me.TextPlus)
-        Me.Controls.Add(Me.TextConfort)
-        Me.Controls.Add(Me.TextTalon)
-        Me.Controls.Add(Me.TextSemelle)
-        Me.Controls.Add(Me.TextSemelleInterieure)
+        Me.Controls.Add(Me.txtPhoto)
+        Me.Controls.Add(Me.txtFermeture)
+        Me.Controls.Add(Me.TxtPlus)
+        Me.Controls.Add(Me.TxtConfort)
+        Me.Controls.Add(Me.TxtTalon)
+        Me.Controls.Add(Me.TxtSemelle)
+        Me.Controls.Add(Me.TxtSemelleInterieure)
         Me.Controls.Add(Me.txtDescription)
         Me.Controls.Add(Me.txtNomModele)
         Me.Name = "frmAjoutProduit"
@@ -361,15 +425,21 @@ Partial Class frmAjoutProduit
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents cboPublic As System.Windows.Forms.ComboBox
-    Friend WithEvents TextSemelleInterieure As System.Windows.Forms.TextBox
+    Friend WithEvents TxtSemelleInterieure As System.Windows.Forms.TextBox
     Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents TextSemelle As System.Windows.Forms.TextBox
+    Friend WithEvents TxtSemelle As System.Windows.Forms.TextBox
     Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents TextTalon As System.Windows.Forms.TextBox
+    Friend WithEvents TxtTalon As System.Windows.Forms.TextBox
     Friend WithEvents Label12 As System.Windows.Forms.Label
-    Friend WithEvents TextConfort As System.Windows.Forms.TextBox
+    Friend WithEvents TxtConfort As System.Windows.Forms.TextBox
     Friend WithEvents Label13 As System.Windows.Forms.Label
-    Friend WithEvents TextPlus As System.Windows.Forms.TextBox
+    Friend WithEvents TxtPlus As System.Windows.Forms.TextBox
     Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents txtFermeture As System.Windows.Forms.TextBox
+    Friend WithEvents Label15 As System.Windows.Forms.Label
+    Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
+    Friend WithEvents txtPhoto As System.Windows.Forms.TextBox
+    Friend WithEvents Label16 As System.Windows.Forms.Label
+    Friend WithEvents btnParcourir As System.Windows.Forms.Button
 End Class

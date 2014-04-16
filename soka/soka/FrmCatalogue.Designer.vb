@@ -22,6 +22,7 @@ Partial Class FrmCatalogue
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.Line1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
@@ -30,13 +31,11 @@ Partial Class FrmCatalogue
         Me.btnModif = New System.Windows.Forms.Button()
         Me.txtDescript = New System.Windows.Forms.RichTextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.img = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
         Me.picbo1 = New System.Windows.Forms.PictureBox()
-        Me.img2 = New System.Windows.Forms.Button()
-        Me.img1 = New System.Windows.Forms.Button()
+        Me.lstvModele = New System.Windows.Forms.ListView()
+        Me.ColModele = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColPrix = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         CType(Me.picbo1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -46,7 +45,7 @@ Partial Class FrmCatalogue
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
         Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape1, Me.Line1})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(667, 466)
+        Me.ShapeContainer1.Size = New System.Drawing.Size(667, 362)
         Me.ShapeContainer1.TabIndex = 0
         Me.ShapeContainer1.TabStop = False
         '
@@ -68,7 +67,7 @@ Partial Class FrmCatalogue
         '
         'btnAjout
         '
-        Me.btnAjout.Location = New System.Drawing.Point(33, 372)
+        Me.btnAjout.Location = New System.Drawing.Point(36, 326)
         Me.btnAjout.Name = "btnAjout"
         Me.btnAjout.Size = New System.Drawing.Size(75, 23)
         Me.btnAjout.TabIndex = 1
@@ -112,42 +111,6 @@ Partial Class FrmCatalogue
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "Description :"
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(24, 132)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(80, 80)
-        Me.Button1.TabIndex = 6
-        Me.Button1.Text = "\d(-_-)b/"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'img
-        '
-        Me.img.Location = New System.Drawing.Point(24, 12)
-        Me.img.Name = "img"
-        Me.img.Size = New System.Drawing.Size(80, 80)
-        Me.img.TabIndex = 8
-        Me.img.Text = "(_- | )"
-        Me.img.UseVisualStyleBackColor = True
-        '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(261, 12)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(80, 80)
-        Me.Button4.TabIndex = 9
-        Me.Button4.Text = "(/-_-)/"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Button5
-        '
-        Me.Button5.Location = New System.Drawing.Point(261, 132)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(80, 80)
-        Me.Button5.TabIndex = 10
-        Me.Button5.Text = "( | -_)"
-        Me.Button5.UseVisualStyleBackColor = True
-        '
         'picbo1
         '
         Me.picbo1.Location = New System.Drawing.Point(446, 12)
@@ -157,37 +120,38 @@ Partial Class FrmCatalogue
         Me.picbo1.TabIndex = 12
         Me.picbo1.TabStop = False
         '
-        'img2
+        'lstvModele
         '
-        Me.img2.Image = Global.soka.My.Resources.Resources.ttipi
-        Me.img2.Location = New System.Drawing.Point(139, 132)
-        Me.img2.Name = "img2"
-        Me.img2.Size = New System.Drawing.Size(80, 80)
-        Me.img2.TabIndex = 11
-        Me.img2.UseVisualStyleBackColor = True
+        Me.lstvModele.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColModele, Me.ColPrix})
+        Me.lstvModele.LargeImageList = Me.ImageList1
+        Me.lstvModele.Location = New System.Drawing.Point(27, 36)
+        Me.lstvModele.Name = "lstvModele"
+        Me.lstvModele.Size = New System.Drawing.Size(353, 235)
+        Me.lstvModele.TabIndex = 13
+        Me.lstvModele.UseCompatibleStateImageBehavior = False
         '
-        'img1
+        'ColModele
         '
-        Me.img1.Image = Global.soka.My.Resources.Resources.s_de_soka
-        Me.img1.Location = New System.Drawing.Point(139, 12)
-        Me.img1.Name = "img1"
-        Me.img1.Size = New System.Drawing.Size(80, 80)
-        Me.img1.TabIndex = 7
-        Me.img1.UseVisualStyleBackColor = True
+        Me.ColModele.Text = "Modele"
+        '
+        'ColPrix
+        '
+        Me.ColPrix.Text = "Prix"
+        '
+        'ImageList1
+        '
+        Me.ImageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit
+        Me.ImageList1.ImageSize = New System.Drawing.Size(60, 60)
+        Me.ImageList1.TransparentColor = System.Drawing.Color.Transparent
         '
         'FrmCatalogue
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.soka.My.Resources.Resources.Fond_
-        Me.ClientSize = New System.Drawing.Size(667, 466)
+        Me.ClientSize = New System.Drawing.Size(667, 362)
+        Me.Controls.Add(Me.lstvModele)
         Me.Controls.Add(Me.picbo1)
-        Me.Controls.Add(Me.img2)
-        Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.img)
-        Me.Controls.Add(Me.img1)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtDescript)
         Me.Controls.Add(Me.btnModif)
@@ -209,11 +173,9 @@ Partial Class FrmCatalogue
     Friend WithEvents btnModif As System.Windows.Forms.Button
     Friend WithEvents txtDescript As System.Windows.Forms.RichTextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents img1 As System.Windows.Forms.Button
-    Friend WithEvents img As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents Button5 As System.Windows.Forms.Button
-    Friend WithEvents img2 As System.Windows.Forms.Button
     Friend WithEvents picbo1 As System.Windows.Forms.PictureBox
+    Friend WithEvents lstvModele As System.Windows.Forms.ListView
+    Friend WithEvents ColModele As System.Windows.Forms.ColumnHeader
+    Friend WithEvents ColPrix As System.Windows.Forms.ColumnHeader
+    Friend WithEvents ImageList1 As System.Windows.Forms.ImageList
 End Class

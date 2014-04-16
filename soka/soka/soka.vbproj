@@ -79,6 +79,12 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmAjoutProduit.Designer.vb">
       <DependentUpon>frmAjoutProduit.vb</DependentUpon>
     </Compile>
@@ -109,10 +115,22 @@
     <Compile Include="frm_AccueilClient.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frm_activite.Designer.vb">
+      <DependentUpon>frm_activite.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_activite.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frm_AjouterEntreprise.Designer.vb">
       <DependentUpon>frm_AjouterEntreprise.vb</DependentUpon>
     </Compile>
     <Compile Include="frm_AjouterEntreprise.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_NewAction.Designer.vb">
+      <DependentUpon>frm_NewAction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_NewAction.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_NouveauProspect.Designer.vb">
@@ -138,6 +156,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAjoutProduit.resx">
       <DependentUpon>frmAjoutProduit.vb</DependentUpon>
     </EmbeddedResource>
@@ -154,8 +175,14 @@
     <EmbeddedResource Include="frm_AccueilClient.resx">
       <DependentUpon>frm_AccueilClient.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_activite.resx">
+      <DependentUpon>frm_activite.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_AjouterEntreprise.resx">
       <DependentUpon>frm_AjouterEntreprise.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_NewAction.resx">
+      <DependentUpon>frm_NewAction.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_NouveauProspect.resx">
       <DependentUpon>frm_NouveauProspect.vb</DependentUpon>
