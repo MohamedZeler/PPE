@@ -26,9 +26,30 @@ Public Class frmAjoutProduit
         End While
         jeuEnr.Close()
         jeuEnr2.Close()
+
+
+        If ajoutModifCatalogue = 2 Then
+
+            cmd.CommandText = "SELECT NomModele, Descriptif, PrixBase, Matiere, Couture, Initiales, SemellesInterieures, Semelle, Fermeture, TalonF, Confort, Plus, IntitulePublic, IntituleCollection FROM MODELE M, PUBLIC2 P, COLLECTION C WHERE M.IdCollection = C.IdCollection AND P.CodePublic = M.CodePublic AND NomModele = '" & IntituleModelePublic & "'"
+            jeuEnr = cmd.ExecuteReader
+            jeuEnr.Read()
+            txtNomModele.Text = jeuEnr.GetValue(0)
+            txtDescription.Text = jeuEnr.GetValue(1)
+            txtPrixBase.Text = jeuEnr.GetValue(2)
+            txtMatiere.Text = jeuEnr.GetValue(3)
+            txtCouture.Text = jeuEnr.GetValue(4)
+            txtInitiales.Text = jeuEnr.GetValue(5)
+            TxtSemelleInterieure.Text = jeuEnr.GetValue(6)
+            TxtSemelle.Text = jeuEnr.GetValue(7)
+            txtFermeture.Text = jeuEnr.GetValue(8)
+            TxtTalon.Text = jeuEnr.GetValue(9)
+            TxtConfort.Text = jeuEnr.GetValue(10)
+            TxtPlus.Text = jeuEnr.GetValue(11)
+            cboPublic.SelectedItem = jeuEnr.GetValue(12)
+            cboCollection.SelectedItem = jeuEnr.GetValue(13)
+            Button1.Text = "Modifier"
+        End If
         cnn.Close()
-
-
     End Sub
 
 
@@ -37,38 +58,58 @@ Public Class frmAjoutProduit
         'cnn = New SqlConnection("Data Source=172.30.0.115;Initial Catalog=SOKA_GestionCo;User ID=SIO1;Password=SIO1MDP")
         cnn = New SqlConnection("Data Source=ADRIEN-PC;Initial Catalog=SOKA_Gestion;User ID=SIO1;Password=SIO1_MDP")
         cnn.Open()
-        Dim cmdInsert As SqlCommand
-        'Dim cmdCollection As SqlCommand
-        Dim cmdPublic As SqlCommand
-        Dim jeuEnr As SqlDataReader
-        ' Dim jeuEnr2 As SqlDataReader
-        cmdPublic = New SqlCommand
-        cmdPublic.Connection = cnn
-        cmdPublic.CommandText = "SELECT CodePublic, IdCollection FROM COLLECTION, PUBLIC2 WHERE IntitulePublic='" & cboPublic.SelectedItem & "' AND IntituleCollection='" & cboCollection.SelectedItem & "'"
-        jeuEnr = cmdPublic.ExecuteReader
-        jeuEnr.Read()
-        'cmdCollection = New SqlCommand
-        'cmdCollection.Connection = cnn
-        'cmdCollection.CommandText = "SELECT IdCollection FROM COLLECTION WHERE IntituleCollection='" & cboCollection.SelectedItem & "'"
-        'jeuEnr = cmdCollection.ExecuteReader
-        'jeuEnr.Read()
+        If ajoutModifCatalogue = 1 Then
 
 
-        'FrmCatalogue.ImageList1.Images.Add(txtNomModele.Text, )
-        cmdInsert = New SqlCommand()
-        cmdInsert.Connection = cnn
-        cmdInsert.CommandText = "INSERT INTO MODELE VALUES('" & txtNomModele.Text & "','" & txtDescription.Text & "','" & txtPrixBase.Text & "','" & txtMatiere.Text & "','" & txtCouture.Text & "','" & txtInitiales.Text & "','" & TxtSemelleInterieure.Text & "','" & TxtSemelle.Text & "','" & txtFermeture.Text & "','" & TxtTalon.Text & "','" & TxtConfort.Text & "','" & TxtPlus.Text & "'," & jeuEnr.GetValue(1) & ",'" & jeuEnr.GetValue(0) & "','photo.jpeg')"
-        jeuEnr.Close()
+            Dim cmdInsert As SqlCommand
+            Dim cmdPublic As SqlCommand
+            Dim jeuEnr As SqlDataReader
+
+            cmdPublic = New SqlCommand
+            cmdPublic.Connection = cnn
 
 
-        cmdInsert.ExecuteNonQuery()
+            cmdPublic.CommandText = "SELECT CodePublic, IdCollection FROM COLLECTION, PUBLIC2 WHERE IntitulePublic='" & cboPublic.SelectedItem & "' AND IntituleCollection='" & cboCollection.SelectedItem & "'"
+            jeuEnr = cmdPublic.ExecuteReader
+            jeuEnr.Read()
 
+
+            cmdInsert = New SqlCommand()
+            cmdInsert.Connection = cnn
+            cmdInsert.CommandText = "INSERT INTO MODELE VALUES('" & txtNomModele.Text & "','" & txtDescription.Text & "','" & txtPrixBase.Text & "','" & txtMatiere.Text & "','" & txtCouture.Text & "','" & txtInitiales.Text & "','" & TxtSemelleInterieure.Text & "','" & TxtSemelle.Text & "','" & txtFermeture.Text & "','" & TxtTalon.Text & "','" & TxtConfort.Text & "','" & TxtPlus.Text & "'," & jeuEnr.GetValue(1) & ",'" & jeuEnr.GetValue(0) & "','photo.jpeg')"
+            jeuEnr.Close()
+
+
+            cmdInsert.ExecuteNonQuery()
+
+
+
+            FileCopy(chemin, "C:\Users\adrien\Documents\GitHub\PPE\soka\soka\Resources\" & txtNomModele.Text & ".jpg")
+            Me.Close()
+            FrmCatalogue.Show()
+
+        ElseIf ajoutModifCatalogue = 2 Then
+            Dim cmdModif As SqlCommand
+            Dim cmdPublic2 As SqlCommand
+            Dim jeuEnr As SqlDataReader
+
+            cmdPublic2 = New SqlCommand
+            cmdModif = New SqlCommand
+            cmdPublic2.Connection = cnn
+            cmdModif.Connection = cnn
+
+            cmdPublic2.CommandText = "SELECT CodeModele, COLLECTION.IdCollection, PUBLIC2.CodePublic FROM MODELE, COLLECTION, PUBLIC2 WHERE NomModele = '" & IntituleModelePublic & "' AND IntituleCollection = '" & cboCollection.SelectedItem & "' AND IntitulePublic = '" & cboPublic.SelectedItem & "'"
+            jeuEnr = cmdPublic2.ExecuteReader
+            jeuEnr.Read()
+
+            cmdModif.CommandText = "UPDATE MODELE SET NomModele='" & txtNomModele.Text & "', Descriptif='" & txtDescription.Text & "', PrixBase='" & txtPrixBase.Text & "', Matiere='" & txtMatiere.Text & "', Couture='" & txtCouture.Text & "', Initiales='" & txtInitiales.Text & "', SemellesInterieures='" & TxtSemelleInterieure.Text & "', Semelle='" & TxtSemelle.Text & "', Fermeture='" & txtFermeture.Text & "', TalonF='" & TxtTalon.Text & "', Confort='" & TxtConfort.Text & "', Plus='" & TxtPlus.Text & "',IdCollection=" & jeuEnr.GetValue(1) & ", CodePublic=" & jeuEnr.GetValue(2) & " WHERE CodeModele=" & jeuEnr.GetValue(0)
+            jeuEnr.Close()
+            cmdModif.ExecuteNonQuery()
+            FileCopy(chemin, "C:\Users\adrien\Documents\GitHub\PPE\soka\soka\Resources\" & txtNomModele.Text & ".jpg")
+            Me.Close()
+            FrmCatalogue.Show()
+        End If
         cnn.Close()
-        FileCopy(chemin, "C:\Users\adrien\Documents\GitHub\PPE\soka\soka\Resources\" & txtNomModele.Text & ".jpg")
-        Me.Close()
-        FrmCatalogue.Show()
-
-
     End Sub
 
     Dim chemin As String

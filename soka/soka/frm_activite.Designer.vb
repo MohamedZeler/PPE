@@ -22,32 +22,43 @@ Partial Class frm_activite
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.dgv_listeaction = New System.Windows.Forms.DataGridView()
-        CType(Me.dgv_listeaction, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.lst_actions = New System.Windows.Forms.ListView()
+        Me.lbl_actiontitre = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'dgv_listeaction
+        'lst_actions
         '
-        Me.dgv_listeaction.AllowUserToAddRows = False
-        Me.dgv_listeaction.AllowUserToDeleteRows = False
-        Me.dgv_listeaction.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgv_listeaction.Location = New System.Drawing.Point(27, 45)
-        Me.dgv_listeaction.Name = "dgv_listeaction"
-        Me.dgv_listeaction.ReadOnly = True
-        Me.dgv_listeaction.Size = New System.Drawing.Size(463, 299)
-        Me.dgv_listeaction.TabIndex = 0
+        Me.lst_actions.Location = New System.Drawing.Point(67, 77)
+        Me.lst_actions.Name = "lst_actions"
+        Me.lst_actions.Size = New System.Drawing.Size(758, 260)
+        Me.lst_actions.TabIndex = 0
+        Me.lst_actions.UseCompatibleStateImageBehavior = False
+        Me.lst_actions.View = System.Windows.Forms.View.Details
+        '
+        'lbl_actiontitre
+        '
+        Me.lbl_actiontitre.AutoSize = True
+        Me.lbl_actiontitre.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
+        Me.lbl_actiontitre.Location = New System.Drawing.Point(346, 26)
+        Me.lbl_actiontitre.Name = "lbl_actiontitre"
+        Me.lbl_actiontitre.Size = New System.Drawing.Size(95, 31)
+        Me.lbl_actiontitre.TabIndex = 1
+        Me.lbl_actiontitre.Text = "Label1"
         '
         'frm_activite
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(510, 368)
-        Me.Controls.Add(Me.dgv_listeaction)
+        Me.BackgroundImage = Global.soka.My.Resources.Resources.Fond_
+        Me.ClientSize = New System.Drawing.Size(872, 368)
+        Me.Controls.Add(Me.lbl_actiontitre)
+        Me.Controls.Add(Me.lst_actions)
         Me.Name = "frm_activite"
         Me.Text = "frm_activite"
-        CType(Me.dgv_listeaction, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents dgv_listeaction As System.Windows.Forms.DataGridView
+    Friend WithEvents lst_actions As System.Windows.Forms.ListView
+    Friend WithEvents lbl_actiontitre As System.Windows.Forms.Label
 End Class

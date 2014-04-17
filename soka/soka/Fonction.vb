@@ -2,6 +2,15 @@
 Imports System.Data.SqlClient
 
 Module Fonction
+    Public ajoutModifCatalogue As Integer
+    Public IntituleModelePublic As String
+    Public ViewAllProspect As Integer
+    Public SearchPrenomContact As String
+    Public SearchNomContact As String
+    Public OnlyRelances As Integer
+
+
+   
 
     Public Sub refreshcboentreprise()
 

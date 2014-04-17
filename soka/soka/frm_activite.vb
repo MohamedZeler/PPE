@@ -7,27 +7,85 @@ Public Class frm_activite
 
         Dim cnn As SqlConnection
         Dim cmd As SqlCommand
-        Dim adapter As SqlDataAdapter
-        Dim table As New DataTable
+        Dim JeuEnr As SqlDataReader
+        Dim relance As String
+
+        lst_actions.FullRowSelect = True
+
+        lst_actions.Columns.Add("Date Action", 80, HorizontalAlignment.Center)
+        lst_actions.Columns.Add("Commentaires", 100, HorizontalAlignment.Center)
+        lst_actions.Columns.Add("A Relancer", 50, HorizontalAlignment.Center)
+        lst_actions.Columns.Add("Date Relance", 80, HorizontalAlignment.Center)
+        lst_actions.Columns.Add("NomProspect", 100, HorizontalAlignment.Center)
+        lst_actions.Columns.Add("PrenomProspect", 100, HorizontalAlignment.Center)
+        lst_actions.Columns.Add("Entreprise", 100, HorizontalAlignment.Center)
+        lst_actions.Columns.Add("Nature action", 100, HorizontalAlignment.Center)
 
         cnn = New SqlConnection("Data Source=ADRIEN-PC;Initial Catalog=SOKA_Gestion;User ID=SIO1;Password=SIO1_MDP")
 
         cnn.Open()
 
-        cmd = New SqlCommand()
-        cmd.Connection = cnn
-        cmd.CommandText = "SELECT * FROM ACTION"
-        adapter = New SqlDataAdapter()
-        adapter.SelectCommand = cmd
+        If OnlyRelances = 0 Then
 
-        table.Locale = System.Globalization.CultureInfo.InvariantCulture
-        adapter.Fill(table)
+            lbl_actiontitre.Text = "Liste des actions"
+
+            cmd = New SqlCommand()
+            cmd.Connection = cnn
+            cmd.CommandText = "SELECT IdAction, DateAction, Commentaire, ARelancer, DateRelance, NomContact, PrenomContact, RaisonSociale, LibTypeAction FROM ACTION, CONTACT, ENTREPRISE, TYPE_ACTION WHERE ACTION.IdContact = CONTACT.IdContact AND CONTACT.IdEntreprise = ENTREPRISE.IdEntreprise AND TYPE_ACTION.IdTypeAction = ACTION.IdTypeAction"
+            JeuEnr = cmd.ExecuteReader()
+
+            Dim i As Integer
+            i = 0
+
+            While JeuEnr.Read()
+                If JeuEnr.GetValue(3) = 1 Then
+                    relance = "Oui"
+                Else
+                    relance = "Non"
+                End If
+                lst_actions.Items.Add(JeuEnr.GetValue(1))
+                lst_actions.Items(lst_actions.Items.Count - 1).SubItems.Add(JeuEnr.GetValue(2))
+                lst_actions.Items(lst_actions.Items.Count - 1).SubItems.Add(relance)
+                lst_actions.Items(lst_actions.Items.Count - 1).SubItems.Add(JeuEnr.GetValue(4))
+                lst_actions.Items(lst_actions.Items.Count - 1).SubItems.Add(JeuEnr.GetValue(5))
+                lst_actions.Items(lst_actions.Items.Count - 1).SubItems.Add(JeuEnr.GetValue(6))
+                lst_actions.Items(lst_actions.Items.Count - 1).SubItems.Add(JeuEnr.GetValue(7))
+                lst_actions.Items(lst_actions.Items.Count - 1).SubItems.Add(JeuEnr.GetValue(8))
+                lst_actions.Items(i).Name = JeuEnr.GetValue(0)
+
+            End While
+        ElseIf OnlyRelances = 1 Then
+
+            lbl_actiontitre.Text = "Liste des relances à réaliser"
+
+            cmd = New SqlCommand()
+            cmd.Connection = cnn
+            cmd.CommandText = "SELECT IdAction, DateAction, Commentaire, ARelancer, DateRelance, NomContact, PrenomContact, RaisonSociale, LibTypeAction FROM ACTION, CONTACT, ENTREPRISE, TYPE_ACTION WHERE ACTION.IdContact = CONTACT.IdContact AND CONTACT.IdEntreprise = ENTREPRISE.IdEntreprise AND TYPE_ACTION.IdTypeAction = ACTION.IdTypeAction AND ARelancer = 1"
+            JeuEnr = cmd.ExecuteReader()
+
+            Dim i As Integer
+            i = 0
+
+            While JeuEnr.Read()
+                If JeuEnr.GetValue(3) = 1 Then
+                    relance = "Oui"
+                Else
+                    relance = "Non"
+                End If
+                lst_actions.Items.Add(JeuEnr.GetValue(1))
+                lst_actions.Items(lst_actions.Items.Count - 1).SubItems.Add(JeuEnr.GetValue(2))
+                lst_actions.Items(lst_actions.Items.Count - 1).SubItems.Add(relance)
+                lst_actions.Items(lst_actions.Items.Count - 1).SubItems.Add(JeuEnr.GetValue(4))
+                lst_actions.Items(lst_actions.Items.Count - 1).SubItems.Add(JeuEnr.GetValue(5))
+                lst_actions.Items(lst_actions.Items.Count - 1).SubItems.Add(JeuEnr.GetValue(6))
+                lst_actions.Items(lst_actions.Items.Count - 1).SubItems.Add(JeuEnr.GetValue(7))
+                lst_actions.Items(lst_actions.Items.Count - 1).SubItems.Add(JeuEnr.GetValue(8))
+                lst_actions.Items(i).Name = JeuEnr.GetValue(0)
+
+            End While
+        End If
 
         cnn.Close()
-
-        dgv_listeaction.AutoGenerateColumns = True
-        dgv_listeaction.DataSource = table
-        dgv_listeaction.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders
 
 
     End Sub

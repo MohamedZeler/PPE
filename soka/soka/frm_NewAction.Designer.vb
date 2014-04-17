@@ -23,7 +23,6 @@ Partial Class frm_NewAction
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.txt_dateaction = New System.Windows.Forms.TextBox()
         Me.txt_commentaire = New System.Windows.Forms.RichTextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.cbo_contact = New System.Windows.Forms.ComboBox()
@@ -31,9 +30,14 @@ Partial Class frm_NewAction
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.chk_relance = New System.Windows.Forms.CheckBox()
-        Me.txt_daterelance = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.btn_ajouteraction = New System.Windows.Forms.Button()
+        Me.cbo_dateactionjour = New System.Windows.Forms.ComboBox()
+        Me.cbo_dateactionmois = New System.Windows.Forms.ComboBox()
+        Me.cbo_dateactionannee = New System.Windows.Forms.ComboBox()
+        Me.cbo_daterelancejour = New System.Windows.Forms.ComboBox()
+        Me.cbo_daterelancemois = New System.Windows.Forms.ComboBox()
+        Me.cbo_daterelanceannee = New System.Windows.Forms.ComboBox()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -44,13 +48,6 @@ Partial Class frm_NewAction
         Me.Label1.Size = New System.Drawing.Size(87, 13)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Date de l'action :"
-        '
-        'txt_dateaction
-        '
-        Me.txt_dateaction.Location = New System.Drawing.Point(129, 47)
-        Me.txt_dateaction.Name = "txt_dateaction"
-        Me.txt_dateaction.Size = New System.Drawing.Size(100, 20)
-        Me.txt_dateaction.TabIndex = 1
         '
         'txt_commentaire
         '
@@ -113,39 +110,87 @@ Partial Class frm_NewAction
         Me.chk_relance.Text = " A relancer"
         Me.chk_relance.UseVisualStyleBackColor = True
         '
-        'txt_daterelance
-        '
-        Me.txt_daterelance.Location = New System.Drawing.Point(205, 304)
-        Me.txt_daterelance.Name = "txt_daterelance"
-        Me.txt_daterelance.Size = New System.Drawing.Size(100, 20)
-        Me.txt_daterelance.TabIndex = 9
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(126, 307)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(74, 13)
-        Me.Label5.TabIndex = 10
-        Me.Label5.Text = "Date relance :"
-        '
         'btn_ajouteraction
         '
-        Me.btn_ajouteraction.Location = New System.Drawing.Point(154, 339)
+        Me.btn_ajouteraction.Location = New System.Drawing.Point(163, 391)
         Me.btn_ajouteraction.Name = "btn_ajouteraction"
         Me.btn_ajouteraction.Size = New System.Drawing.Size(75, 23)
         Me.btn_ajouteraction.TabIndex = 11
         Me.btn_ajouteraction.Text = "Ajouter"
         Me.btn_ajouteraction.UseVisualStyleBackColor = True
         '
+        'cbo_dateactionjour
+        '
+        Me.cbo_dateactionjour.FormattingEnabled = True
+        Me.cbo_dateactionjour.Location = New System.Drawing.Point(129, 46)
+        Me.cbo_dateactionjour.Name = "cbo_dateactionjour"
+        Me.cbo_dateactionjour.Size = New System.Drawing.Size(43, 21)
+        Me.cbo_dateactionjour.TabIndex = 12
+        '
+        'cbo_dateactionmois
+        '
+        Me.cbo_dateactionmois.FormattingEnabled = True
+        Me.cbo_dateactionmois.Location = New System.Drawing.Point(178, 46)
+        Me.cbo_dateactionmois.Name = "cbo_dateactionmois"
+        Me.cbo_dateactionmois.Size = New System.Drawing.Size(88, 21)
+        Me.cbo_dateactionmois.TabIndex = 13
+        '
+        'cbo_dateactionannee
+        '
+        Me.cbo_dateactionannee.FormattingEnabled = True
+        Me.cbo_dateactionannee.Location = New System.Drawing.Point(273, 46)
+        Me.cbo_dateactionannee.Name = "cbo_dateactionannee"
+        Me.cbo_dateactionannee.Size = New System.Drawing.Size(62, 21)
+        Me.cbo_dateactionannee.TabIndex = 14
+        '
+        'cbo_daterelancejour
+        '
+        Me.cbo_daterelancejour.FormattingEnabled = True
+        Me.cbo_daterelancejour.Location = New System.Drawing.Point(129, 304)
+        Me.cbo_daterelancejour.Name = "cbo_daterelancejour"
+        Me.cbo_daterelancejour.Size = New System.Drawing.Size(43, 21)
+        Me.cbo_daterelancejour.TabIndex = 15
+        '
+        'cbo_daterelancemois
+        '
+        Me.cbo_daterelancemois.FormattingEnabled = True
+        Me.cbo_daterelancemois.Location = New System.Drawing.Point(178, 304)
+        Me.cbo_daterelancemois.Name = "cbo_daterelancemois"
+        Me.cbo_daterelancemois.Size = New System.Drawing.Size(88, 21)
+        Me.cbo_daterelancemois.TabIndex = 16
+        '
+        'cbo_daterelanceannee
+        '
+        Me.cbo_daterelanceannee.FormattingEnabled = True
+        Me.cbo_daterelanceannee.Location = New System.Drawing.Point(272, 304)
+        Me.cbo_daterelanceannee.Name = "cbo_daterelanceannee"
+        Me.cbo_daterelanceannee.Size = New System.Drawing.Size(62, 21)
+        Me.cbo_daterelanceannee.TabIndex = 17
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
+        Me.Label5.Location = New System.Drawing.Point(102, 9)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(200, 31)
+        Me.Label5.TabIndex = 18
+        Me.Label5.Text = "Nouvelle action"
+        '
         'frm_NewAction
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(393, 374)
-        Me.Controls.Add(Me.btn_ajouteraction)
+        Me.BackgroundImage = Global.soka.My.Resources.Resources.Fond_
+        Me.ClientSize = New System.Drawing.Size(393, 426)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.txt_daterelance)
+        Me.Controls.Add(Me.cbo_daterelanceannee)
+        Me.Controls.Add(Me.cbo_daterelancemois)
+        Me.Controls.Add(Me.cbo_daterelancejour)
+        Me.Controls.Add(Me.cbo_dateactionannee)
+        Me.Controls.Add(Me.cbo_dateactionmois)
+        Me.Controls.Add(Me.cbo_dateactionjour)
+        Me.Controls.Add(Me.btn_ajouteraction)
         Me.Controls.Add(Me.chk_relance)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -153,7 +198,6 @@ Partial Class frm_NewAction
         Me.Controls.Add(Me.cbo_contact)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txt_commentaire)
-        Me.Controls.Add(Me.txt_dateaction)
         Me.Controls.Add(Me.Label1)
         Me.Name = "frm_NewAction"
         Me.Text = "frm_NewAction"
@@ -162,7 +206,6 @@ Partial Class frm_NewAction
 
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents txt_dateaction As System.Windows.Forms.TextBox
     Friend WithEvents txt_commentaire As System.Windows.Forms.RichTextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents cbo_contact As System.Windows.Forms.ComboBox
@@ -170,7 +213,12 @@ Partial Class frm_NewAction
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents chk_relance As System.Windows.Forms.CheckBox
-    Friend WithEvents txt_daterelance As System.Windows.Forms.TextBox
-    Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents btn_ajouteraction As System.Windows.Forms.Button
+    Friend WithEvents cbo_dateactionjour As System.Windows.Forms.ComboBox
+    Friend WithEvents cbo_dateactionmois As System.Windows.Forms.ComboBox
+    Friend WithEvents cbo_dateactionannee As System.Windows.Forms.ComboBox
+    Friend WithEvents cbo_daterelancejour As System.Windows.Forms.ComboBox
+    Friend WithEvents cbo_daterelancemois As System.Windows.Forms.ComboBox
+    Friend WithEvents cbo_daterelanceannee As System.Windows.Forms.ComboBox
+    Friend WithEvents Label5 As System.Windows.Forms.Label
 End Class
